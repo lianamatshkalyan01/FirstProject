@@ -39,10 +39,17 @@ nav{
     height: 80px;
 }
 
-.basketamount{
+#basketamount{
     margin-top: 25px;
-    font-size: 25px;
+    padding-left: 2px;
+    font-size: 20px;
     font-weight: bolder;
+    height: 40px;
+    width: 40px;
+    background-image: url("images/erkin.jfif");
+    border: #0F1187;
+    text-align: end;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .navsearch{
     width: 500px;

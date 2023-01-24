@@ -1,6 +1,7 @@
 let amount = document.querySelector(".amount");
 let button1 = document.querySelector("#button1");
 let button2 = document.querySelector("#button2");
+let amount1 = document.querySelector('#amount1');
 const cost1 = document.querySelector("#cost1");
 let currentAmount1 = 0;
 let currentCost1 = 0;
@@ -128,12 +129,37 @@ function fifthdec(){
 }
 document.getElementById("button10").addEventListener("click", fifthdec());
 
+let basketamount = document.querySelector("#basketamount");
+let bask1 = document.querySelector("#bask1");
+currentbasketamount.value=0
+function first(){
+    basketamount.value = Number(basketamount.value) + (+amount1.textContent);
+}
+bask1.addEventListener("click", first())
 
+let bask2 = document.querySelector("#bask2");
+function second(){
+    basketamount.value = Number(basketamount.value) + (+amount2.textContent);
+}
+bask2.addEventListener("click", second());
 
+let bask3 = document.querySelector("#bask3");
+function third(){
+    basketamount.value = Number(basketamount.value) + (+amount3.textContent);
+}
+bask3.addEventListener("click", third());
 
+let bask4 = document.querySelector("#bask4");
+function fourth(){
+    basketamount.value = Number(basketamount.value) + (+amount4.textContent);
+}
+bask4.addEventListener("click", fourth());
 
-
-
+let bask5 = document.querySelector("#bask5");
+function fifth(){
+    basketamount.value = Number(basketamount.value) + (+amount5.textContent);
+}
+bask5.addEventListener("click", fifth());
 
 
 

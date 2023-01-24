@@ -21,7 +21,7 @@
                 <li class="navlist"><a href="" class="navlink">Contact</a></li>
             </ul>
             <img class= "basket" src="images/basket.jfif" alt="image">
-            <p class="basketamount">(0)</p>
+            <input type="number" id="basketamount" value="0">
         </nav>
     </header>
     <div class="slider">
@@ -34,10 +34,10 @@
         <p class="cost" id="cost1">6500 AMD</p>
         <div class="button" >
         <button class="btn" id="button2" onclick="firstdec()"> - </button>
-        <p class="amount"> 1 </p>
+        <p class="amount" id="amount1"> 1 </p>
         <button class="btn1" id="button1" onclick="firstinc()"> + </button>
     </div>
-    <button class="bask"></button>
+    <button class="bask" id="bask1" onclick="first()"></button>
         </div>
     </main>
         <div class="desc">
@@ -67,7 +67,7 @@
             <p class="amount" id="amount2"> 1 </p>
             <button class="btn1" id="button3" onclick="secondinc()"> + </button>
         </div>
-        <button class="bask"></button>
+        <button class="bask" id="bask2" onclick="second()"></button>
             </div>
         </main>
             <div class="desc">
@@ -97,7 +97,7 @@
                 <p class="amount" id="amount3"> 1 </p>
                 <button class="btn1" id="button5" onclick="thirdinc()"> + </button>
             </div>
-            <button class="bask"></button>
+            <button class="bask" id="bask3" onclick="third()"></button>
                 </div>
             </main>
                 <div class="desc">
@@ -127,7 +127,7 @@
                     <p class="amount" id="amount4"> 1 </p>
                     <button class="btn1" id="button7" onclick="fourthinc()"> + </button>
                 </div>
-                <button class="bask"></button>
+                <button class="bask" id="bask4" onclick="fourth()"></button>
                     </div>
                 </main>
                     <div class="desc">
@@ -157,7 +157,7 @@
                         <p class="amount" id="amount5"> 1 </p>
                         <button class="btn1" id="button9" onclick="fifthinc()"> + </button>
                     </div>
-                    <button class="bask"></button>
+                    <button class="bask" id="bask5" onclick="fifth()"></button>
                         </div>
                     </main>
                         <div class="desc">
