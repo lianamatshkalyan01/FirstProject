@@ -25,12 +25,12 @@ function nextImage(direction) {
       index--;
     }
   }
-
   for(let i = 0; i < images.length; i++) {
     images[i].classList.remove('main');
   }
   images[index].classList.add('main');
 }
+
 let amount = document.querySelector(".amount");
 let button1 = document.querySelector("#button1");
 let button2 = document.querySelector("#button2");
@@ -162,6 +162,38 @@ function fifthdec(){
 }
 document.getElementById("button10").addEventListener("click", fifthdec());
 
+// const items = [
+//     { amount: document.querySelector("#amount1"), cost: document.querySelector("#cost1"), inc: 6500, dec: 6500 },
+//     { amount: document.querySelector("#amount2"), cost: document.querySelector("#cost2"), inc: 1800, dec: 1800 },
+//     { amount: document.querySelector("#amount3"), cost: document.querySelector("#cost3"), inc: 1400, dec: 1400 },
+//     { amount: document.querySelector("#amount4"), cost: document.querySelector("#cost4"), inc: 1400, dec: 1400 },
+//     { amount: document.querySelector("#amount5"), cost: document.querySelector("#cost5"), inc: 1400, dec: 1400 }
+//   ];
+  
+//   for (let i = 0; i < items.length; i++) {
+//     let currentAmount = 0;
+//     let currentCost = 0;
+//     let item = items[i];
+//     let buttonInc = document.querySelector(`#button${i*2+1}`);
+//     let buttonDec = document.querySelector(`#button${i*2+2}`);
+  
+//     buttonInc.addEventListener("click", () => {
+//       currentAmount++;
+//       currentCost += item.inc;
+//       item.amount.textContent = currentAmount;
+//       item.cost.textContent = currentCost + " AMD";
+//     });
+  
+//     buttonDec.addEventListener("click", () => {
+//       if (currentAmount > 1) {
+//         currentAmount--;
+//         currentCost -= item.dec;
+//         item.amount.textContent = currentAmount;
+//         item.cost.textContent = currentCost + " AMD";
+//       }
+//     });
+//   }
+
 let basketamount = document.querySelector("#basketamount");
 let bask1 = document.querySelector("#bask1");
 currentbasketamount.value=0
@@ -193,6 +225,16 @@ function fifth(){
     basketamount.value = Number(basketamount.value) + (+amount5.textContent);
 }
 bask5.addEventListener("click", fifth());
+
+// let basketamount = document.querySelector("#basketamount");
+// basketamount.value = 0;
+// for (let i = 1; i <= 5; i++) {
+//   let bask = document.querySelector(`#bask${i}`);
+//   let amount = document.querySelector(`#amount${i}`);
+//   bask.addEventListener("click", () => {
+//     basketamount.value = Number(basketamount.value) + Number(amount.textContent);
+//   });
+// }
 
 
 
