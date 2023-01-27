@@ -128,7 +128,7 @@ nav{
       }
 
 .container{
-    display: flex;
+    display:flex;
     flex-wrap: wrap;
     margin-top: 2%;
     margin-left: 2%;
